@@ -1,0 +1,114 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="F:/Redis-01" />
+        <option value="F:/vue" />
+        <option value="F:/redis01" />
+        <option value="F:/maven-java" />
+        <option value="F:/maven_web" />
+        <option value="F:/ideaWorkspace" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="F:/Redis-01" />
+      </list>
+    </option>
+    <option name="lastPath" value="F:/Redis-01" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/heima">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1568622748370" />
+              <option name="buildTimestamp" value="1551181754784" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="F:/Redis">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1571450109356" />
+              <option name="buildTimestamp" value="1551181742348" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="F:/Redis-01">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1571704961901" />
+              <option name="buildTimestamp" value="1551181774997" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="F:/ideaWorkspace">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1568879206152" />
+              <option name="buildTimestamp" value="1551181745393" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="F:/maven-java">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1569490884492" />
+              <option name="buildTimestamp" value="1551181745105" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="F:/maven_web">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1568883958697" />
+              <option name="buildTimestamp" value="1551181745393" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="F:/redis01">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1571637676922" />
+              <option name="buildTimestamp" value="1551181783580" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="F:/vue">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-183.5912.21" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1571637745023" />
+              <option name="buildTimestamp" value="1551181783580" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="F:/" />
+  </component>
+</application>

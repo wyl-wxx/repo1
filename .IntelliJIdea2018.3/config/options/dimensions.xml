@@ -1,0 +1,36 @@
+<application>
+  <component name="DimensionService">
+    <location key="new project wizard.0.0.1920.1080" x="1082" y="84" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="962" y="437" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080" x="640" y="342" />
+    <location key="#Project_Structure.0.0.1920.1080" x="440" y="93" />
+    <location key="SettingsEditor.0.0.1920.1080" x="828" y="169" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080" x="1092" y="268" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1920.1080" x="1160" y="194" />
+    <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1920.1080" x="945" y="272" />
+    <location key="com.intellij.testIntegration.createTest.CreateTestDialog.0.0.1920.1080" x="500" y="253" />
+    <location key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser.0.0.1920.1080" x="1052" y="118" />
+    <location key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog.0.0.1920.1080" x="1217" y="233" />
+    <location key="search.everywhere.popup.0.0.1920.1080" x="1235" y="255" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080" x="807" y="164" />
+    <location key="#com.intellij.javaee.module.view.web.EditWebRootDialog.0.0.1920.1080" x="1191" y="501" />
+    <location key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog.0.0.1920.1080" x="1176" y="209" />
+    <location key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog.0.0.1920.1080" x="1137" y="199" />
+    <location key="Maven.ArtifactSearchDialog.0.0.1920.1080" x="704" y="172" />
+    <location key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD.0.0.1920.1080" x="1112" y="505" />
+    <location key="find.popup.0.0.1920.1080" x="939" y="157" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1014" height="290" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1014" height="290" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1014" height="290" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1014" height="290" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080" width="1340" height="320" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080" width="1340" height="320" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080" width="1340" height="320" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080" width="1340" height="320" />
+    <size key="FileChooserDialogImpl.0.0.1920.1080" width="426" height="521" />
+    <size key="new project wizard.0.0.1920.1080" width="765" height="801" />
+    <size key="SettingsEditor.0.0.1920.1080" width="1040" height="843" />
+    <size key="Search_Everywhere_Filter_Popup.0.0.1920.1080" width="254" height="198" />
+    <size key="find.popup.0.0.1920.1080" width="782" height="777" />
+  </component>
+</application>
