@@ -1,0 +1,243 @@
+Java基础
+1.Java中内存管理及各区域内存储数据的生命周期?
+2.JVM堆内存的分代管理以及垃圾回收流程?
+3.面向对象三大特征及详细理解?
+4.重载与重写的区别?
+5.接口和抽象类区别?
+6.实例变量和静态变量的区别?
+7.八大基本类型及字节数和位数?
+8.switch cach是否支持byte,short和long,是否支持String?
+9.String中和Array中是否有length属性和length()方法?
+10.==和equals的区别?
+11.String str=new String("abc");创建了几个对象?
+   再以上基础上又String str1=new String("abc");一共创建几个对象?
+12.String,StringBuffer,StringBulider的区别?
+13.怎么把ISO8859-1编码的字符串转换成GBK或者UTF-8的字符串?
+14.Integer i1=127;Integer i2=127;i1==i2结果为true还是false?
+   Integer i3=Integer.valueOf(127);Integer i3=Integer.valueOf(127);
+   i3==i4结果为true还是false?
+15.List和Set以及Map他们的实现类有哪些?
+16.ArrayList和LinkedList的区别?
+17.HashMap和HashTable的区别?
+18.HashMap内部存储数据的原理?(PPT上有张原理图务必会画)
+19.创建线程有几种方式?有何区别?
+20.线程运行中的五种状态?
+21.线程中synchronized的用法?
+22.synchronized什么情况下是同步锁,什么情况下是互斥锁?
+23.什么是死锁?怎么解决死锁?
+24.Exception和RuntimeException区别?
+   throw和throws的区别?
+25.请说出五种以上常见运行时异常的名字以及产生的原因和解决方案?
+26.final,finalize,finally的区别?
+27.什么是反射,怎么通过反射获取类对象,并且实例化该类对象,怎么获取类对象中属性和方法并执行方法?
+CSS/JS
+28.表单控件有哪些?
+29.三种弹出框分别是?
+30.什么是盒子模型?盒子模型计算公式?
+31.JS冒泡机制?
+   什么是JS闭包?
+32.怎么获取select下来选选中的option的value值?
+33.怎么获取checkbox选中的多个value值?
+34.怎么获取radio单选框选中的value值?
+35.CSS选择器有哪些?
+36.JQuery选择器有哪些?
+37.JQuery中val(),val("值"),html(),html("值"),text(),text("值")有什么区别?分别支持哪些类型标签?
+38.JQuery中addClass("样式名");removeClass("样式名");hasClass("样式名");
+   data("绑定名");data("绑定名","绑定值");attr("属性名","属性值");attr("属性名");函数都是做什么用的?
+数据库/JDBC
+39.mysql和oracle的端口号?
+40.oracle和mysql中的聚合函数和空值函数有哪些?
+41.oracle和mysql中各自的分页查询怎么写?
+42.oracle和mysql中怎么做行列转换?
+43.复制表:包含结构和数据以及只包含结构不包含数据分别怎么实现?
+44.将一个表中的数据插入到另外一张表结构相同的表中怎么实现?
+45.oracle中的rowid和rownum分别是什么?
+46.数据库约束有哪些?
+47.怎么写存储过程和触发器?
+48.删除表中重复数据保留一条怎么实现?
+49.union和unionall的区别?
+50.数据库中乐观锁和悲观锁?
+51.创建用户并授权?
+52.真删除和假删除?真分页和假分页?
+53.什么是事务?事务有哪4项特性?
+54.JDBC的运行过程?
+55.Statement和Preparedstatement的区别?
+Servlet/JSP
+56.什么是HTTP协议?包含哪些数据包,各数据包内又有什么?
+57.有几种方式可以修改tomcat的端口号?
+58.servlet生命周期?
+59.JSP的运行过程?
+60.JSP九大内置对象?其中哪4个是作用域对象?怎么从某个作用域中取值?
+61.session和cookie的区别(详细的)?
+62.转发和重定向的区别以及是哪个对象调用其哪个方法执行的?
+请求转发：
+request.getRequestDispatcher(URL地址).forward(request, response)
+处理流程：
+客户端发送请求，Servlet做出业务逻辑处理。
+Servlet调用forword()方法，服务器Servlet把目标资源返回给客户端浏览器。
+请求转发
+2）重定向：
+response.sendRedirect(URL地址)
+处理流程：
+客户端发送请求，Servlet做出业务逻辑处理。
+Servlet调用response.sendReadirect()方法，把要访问的目标资源作为response响应头信息发给客户端浏览器。
+客户端浏览器重新访问服务器资源xxx.jsp，服务器再次对客户端浏览器做出响应。
+
+63.get和post请求的区别?
+框架
+64.Spring框架的核心模块(PPT上有一张图)?
+
+
+65.SpringIOC和DI?
+IOC:  控制反转,将类的对象的创建交给Spring类管理创建. 
+DI:    依赖注入,将类里面的属性在创建类的过程中给属性赋值. 
+DI和IOC的关系: DI不能单独存在,DI需要在IOC的基础上来完成.
+
+66.SpringMVC的五大核心组件及工作流程?
+1、DispatcherServlet：中央控制器，把请求给转发到具体的控制类
+2、Controller：具体处理请求的控制器
+3、HandlerMapping：映射处理器，负责映射中央处理器转发给controller时的映射策略
+4、ModelAndView：服务层返回的数据和视图层的封装类
+5、ViewResolver：视图解析器，解析具体的视图
+6、Interceptors ：拦截器，负责拦截我们定义的请求然后做处理工作
+
+67.SpringMyBatis整合需要做哪些相关配置?
+1.使用mapper接口，定义了mapper接口，在mapper.xml中关联mapper文件的。
+.配置web.xml文件-->扫描控制层、自动注入以及视图解析器的配置 springmvc-servlet.xml-->spring代管sqlsessionFactory 、dao层接口动态代理以及事务的配置ApplicationContext.xml-->如果使用单数据源配置sqlSessionTemplateBeanName 这个属性值需要额外加此段代码配置，（注释的部分解开）.
+2.使用SqlSessionTemplate进行调用sql语句的配置。
+
+68.单例模式,工厂模式?
+     单例模式又称为职责模式，它用来在程序中创建一个单一功能的访问点，通俗地说就是实例化出来的对象是唯一的。
+所有的单例模式至少拥有以下三种公共元素：
+1. 它们必须拥有一个构造函数，并且必须被标记为private
+2. 它们拥有一个保存类的实例的静态成员变量
+3. 它们拥有一个访问这个实例的公共的静态方法
+单例类不能再其它类中直接实例化，只能被其自身实例化。它不会创建实例副本，而是会向单例类内部存储的实例返回一个引用。
+     工厂模式就是一种类，具有为您创建对象的某些方法，这样就可以使用工厂类创建对象，而不直接使用new。这样如果想更改创建的对象类型，只需更改该工厂即可。
+
+69.Ajax技术(js版和jquey版)?
+AJAX简介
+1、介绍
+    AJAX（Asynchronous Javascript And XML）翻译成中文就是“异步的Javascript和XML”。即使用Javascript语言与服务器进行异步交互，传输的数据为XML（当然，传输的数据不只是XML）。
+    AJAX 不是新的编程语言，而是一种使用现有标准的新方法。
+    AJAX 最大的优点是在不重新加载整个页面的情况下，可以与服务器交换数据并更新部分网页内容。（这一特点给用户的感受是在不知不觉中完成请求和响应过程）
+    AJAX 不需要任何浏览器插件，但需要用户允许JavaScript在浏览器上执行。
+        同步交互：客户端发出一个请求后，需要等待服务器响应结束后，才能发出第二个请求；
+        异步交互：客户端发出一个请求后，无需等待服务器响应结束，就可以发出第二个请求。
+2、AJAX常见应用情景
+    1.搜索引擎根据用户输入的关键字，自动提示检索关键字。
+    2.还有一个很重要的应用场景就是注册时候的用户名的查重。
+        其实这里就使用了AJAX技术！当文件框发生了输入变化时，使用AJAX技术向服务器发送一个请求，然后服务器会把查询到的结果响应给浏览器，最后再把后端返回的结果展示出来。
+        当输入用户名后，把光标移动到其他表单项上时，浏览器会使用AJAX技术向服务器发出请求，服务器会查询你输入的用户名是否存在，最终服务器返回true表示名你输入的用户名已经存在了，
+        浏览器在得到结果后显示“用户名已被注册！”。
+        整个过程中页面没有刷新，只是局部刷新了；
+        在请求发出后，浏览器不用等待服务器响应结果就可以进行其他操作；
+3、AJAX的优缺点
+    优点：
+    　　AJAX使用JavaScript技术向服务器发送异步请求；
+    　　AJAX请求无须刷新整个页面；
+    　　因为服务器响应内容不再是整个页面，而是页面中的部分内容，所以AJAX性能高  
+　　缺点：
+　　　　AJAX滥用对服务端压力比较大
+
+70.JSON技术?
+
+71.Spring框架的组件扫描注解有哪些?
+
+72.RequestMapping和ResponsBody注解分别是做什么用的?
+@RequestMapping 是一个用来处理请求地址映射的注解，可用于类或方法上。用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径；用于方法上，表示在类的父路径下追加方法上注解中的地址将会访问到该方法
+@Responsebody 注解表示该方法的返回的结果直接写入 HTTP 响应正文（ResponseBody）中，一般在异步获取数据时使用，通常是在使用 @RequestMapping 后，返回值通常解析为跳转路径，加上 @Responsebody 后返回结果不会被解析为跳转路径，而是直接写入HTTP 响应正文中。
+作用：
+该注解用于将Controller的方法返回的对象，通过适当的HttpMessageConverter转换为指定格式后，写入到Response对象的body数据区。
+使用时机：
+返回的数据不是html标签的页面，而是其他某种格式的数据时（如json、xml等）使用；
+版权声明：本文为CSDN博主「不止会New」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/ff906317011/article/details/78552426/
+
+73.什么是AOP?通知方式有几种?切入点有哪些?
+这种在运行时，动态地将代码切入到类的指定方法、指定位置上的编程思想就是面向切面的编程。
+AOP是Spring提供的关键特性之一。AOP即面向切面编程，是OOP编程的有效补充。
+使用AOP技术，可以将一些系统性相关的编程工作，独立提取出来，独立实现，然后通过切面切入进系统。
+从而避免了在业务逻辑的代码中混入很多的系统相关的逻辑——比如权限管理，事物管理，日志记录等等。
+这些系统性的编程工作都可以独立编码实现，然后通过AOP技术切入进系统即可。从而达到了 将不同的关注点分离出来的效果。
+本文深入剖析Spring的AOP的原理。
+1. AOP相关的概念
+1） Aspect ：切面，切入系统的一个切面。比如事务管理是一个切面，权限管理也是一个切面；
+2） Join point ：连接点，也就是可以进行横向切入的位置；
+3） Advice ：通知，切面在某个连接点执行的操作(分为: Before advice , After returning advice , After throwing advice , After (finally) advice , Around advice )；
+4） Pointcut ：切点，符合切点表达式的连接点，也就是真正被切入的地方；
+2. AOP 的实现原理
+AOP分为静态AOP和动态AOP。
+静态AOP是指AspectJ实现的AOP，他是将切面代码直接编译到Java类文件中。
+动态AOP是指将切面代码进行动态织入实现的AOP。
+Spring的AOP为动态AOP，实现的技术为： JDK提供的动态代理技术 和 CGLIB(动态字节码增强技术) 。尽管实现技术不一样，但 都是基于代理模式 ， 都是生成一个代理对象 。
+
+通知方式：前置通知/后置通知/最终通知/异常通知/环绕通知
+方法调用前通知
+方法调用后正常返回的时候通知，可以获取返回值，发生异常的时候不会执行
+无论程序是否发生异常都会执行的
+发生异常的执行
+方法执行的时候
+
+74.拦截器和过滤器的区别?
+①拦截器是基于java的反射机制的，而过滤器是基于函数回调。
+　　②拦截器不依赖与servlet容器，过滤器依赖与servlet容器。
+　　③拦截器只能对action请求起作用，而过滤器则可以对几乎所有的请求起作用。
+　　④拦截器可以访问action上下文、值栈里的对象，而过滤器不能访问。
+　　⑤在action的生命周期中，拦截器可以多次被调用，而过滤器只能在容器初始化时被调用一次。
+　　⑥拦截器可以获取IOC容器中的各个bean，而过滤器就不行，这点很重要，在拦截器里注入一个service，可以调用业务逻辑。
+1.过滤器和拦截器触发时机不一样:
+　　过滤器是在请求进入容器后，但请求进入servlet之前进行预处理的。请求结束返回也是，是在servlet处理完后，返回给前端之前。   
+
+75.MyBatis中#{}和${}的区别?
+1、#将传入的数据都当成一个字符串，会对自动传入的数据加一个双引号。
+如：where username=#{username}，如果传入的值是111,那么解析成sql时的值为where username="111", 如果传入的值是id，则解析成的sql为where username="id".　
+2、$将传入的数据直接显示生成在sql中。
+如：where username=${username}，如果传入的值是111,那么解析成sql时的值为where username=111；
+3、针对上面的sql，如果传入的值是;drop table user;，
+那么第一条用#{}的sql解析为：select id, username, password, role from user where username=";drop table user;"
+那么第二条用${}的sql解析为：select id, username, password, role from user where username=;drop table user;
+这时候已经sql注入了。
+3、#方式能够很大程度防止sql注入，$方式无法防止Sql注入。
+4、$方式一般用于传入数据库对象，例如传入表名和列名，还有排序时使用order by动态参数时需要使用$ ，ORDER BY ${columnName}
+5、一般能用#的就别用$，若不得不使用“${xxx}”这样的参数，要手工地做好过滤工作，来防止sql注入攻击。
+6、在MyBatis中，“${xxx}”这样格式的参数会直接参与SQL编译，从而不能避免注入攻击。但涉及到动态表名和列名时，只能使用“${xxx}”这样的参数格式。所以，这样的参数需要我们在代码中手工进行处理来防止注入。
+【结论】在编写MyBatis的映射语句时，尽量采用“#{xxx}”这样的格式。若不得不使用“${xxx}”这样的参数，要手工地做好过滤工作，来防止SQL注入攻击。
+
+
+项目
+76.项目某模块思路
+   1)该模块是解决用户什么问题的?
+   2)牵涉到了那些数据库相关表,表里有哪些主要字段,多表的情况下表之间的关系?
+   3)项目中都用到了那些技术?每个技术都在请求流程中哪些环节生效?
+   4)从请求发起时以一个完整的流程把相关技术和业务穿插到该请求中?
+
+提高题:
+77.Nginx是什么技术?
+78.Redis是什么技术?
+79.BootStrap是什么框架?
+80.Linux系统命令知道哪些?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+行列转换
+create table stu(
+   id  int(10) primary key auto_increment,
+   name varchar(10),
+   age  int(10),
+   sex char(3));
+
+insert into stu values(null,'张三',18,'男'),(null,'李四',18,'男'),
+		      (null,'王五',18,'女'),(null,'赵六',19,'男'),
+    		      (null,'钱七',19,'女'),(null,'孙八',19,'女'),
+		      (null,'小翠',20,'女'),(null,'小明',20,'男');
+
+mysql中：
+使用if函数和case  when
+
+if(条件，值1，值2):当条件为true时取值1，false取值2
+
+案例：分别统计18,19,20岁的学生男，女人数各是多少？
+select age '年龄', 
+       sum(if(sex='男',1,0)) '男',
+       sum(if(sex='女',1,0)) '女'
+from stu
+group by age;
+
+oracle中：
+使用case  when
+
+case  值 when 匹配值1 
+         then 
+              语句...
+         else 
+              语句... 
+         end :当值匹配到配置1成立时执行then后语句,否则执行else
+
+case when 条件
+     then
+          语句...
+     else 
+          语句...
+     end :当条件成立时执行then后语句,否则执行else
+
+
+案例：分别统计18,19,20岁的学生男，女人数各是多少？
+select age '年龄',
+       sum(case sex  when '男'
+                 then  1
+                 else  0 end) '男',
+       sum(case sex  when '女'
+                 then  1
+                 else  0 end) '男'
+from stu
+group by age;
+
+      
+删除重复保留一条:
+mysql中:
+create table u(
+  id int primary key auto_increment,
+  name varchar(10),
+  age  int,
+  sal  int
+);
+
+insert into u values(null,'张三',20,5000),(null,'张三',20,5000),
+                    (null,'张三',20,5000),(null,'张三',20,5000),
+                    (null,'李四',30,6000),(null,'李四',30,6000),
+                    (null,'李四',30,6000),(null,'李四',30,6000),
+                    (null,'王五',40,4000);
+
+insert into score values('张三','语文',81),('张三','数学',75),
+                    ('李四','语文',76),('李四','数学',90),
+                    ('王五','语文',81),('王五','数学',100),
+                    ('王五','英语',90);
+删除重复:
+1.先获取重复的数据每组分组后的最大id
+select max(id),name from u group by name,age,sal having count(*)>1;
+2.删除不包含这两个最大id的数据
+delete from u where id not in (
+		select t.* from(
+                  select max(id) from u 
+                  group by name,age,sal 
+                  having count(*)>1) t);
+3.这样虽然可以删,但是存在误删,会把不重复的数据给删除,继续修改
+delete from u where id not in (
+		select t.* from(
+                  select max(id) from u 
+                  group by name,age,sal 
+                  having count(*)>1) t)
+            and name in(
+                select n.* from(
+                  select name from u 
+                  group by name,age,sal 
+                  having count(*)>1) n);
+
+oracle中:
+--先创建序列,实现自动增长功能
+CREATE SEQUENCE u_hxf_sq
+START WITH 1
+INCREMENT BY 1;
+
+create table u(
+  id number(5) primary key,
+  name varchar2(10),
+  age  number(3),
+  sal  number(5)
+);
+
+insert into u values(u_hxf_sq.NEXTVAL,'张三',20,5000);
+insert into u values(u_hxf_sq.NEXTVAL,'张三',20,5000);
+insert into u values(u_hxf_sq.NEXTVAL,'张三',20,5000);
+insert into u values(u_hxf_sq.NEXTVAL,'张三',20,5000);
+insert into u values(u_hxf_sq.NEXTVAL,'李四',30,6000);
+insert into u values(u_hxf_sq.NEXTVAL,'李四',30,6000);
+insert into u values(u_hxf_sq.NEXTVAL,'李四',30,6000);
+insert into u values(u_hxf_sq.NEXTVAL,'李四',30,6000);
+insert into u values(u_hxf_sq.NEXTVAL,'王五',40,4000);
+方式1:mysql中的写法oracle完全支持,只不过不用在支持在自己的表中查询后立即删除
+方式2:使用rowid:记录了当前语句在oracle中的物理位置信息
+delete from u where rowid not in (
+                  select max(rowid) from u 
+                  group by name,age,sal 
+                  having count(*)>1)
+            and name in(
+                  select name from u 
+                  group by name,age,sal 
+                  having count(*)>1);
+
+
+
+
+
+
+
+
+
+
+
+
+
